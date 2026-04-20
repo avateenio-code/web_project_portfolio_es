@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "ArchivoBlack-Regular";
+  src:
+    url(/vendor/fonts/ArchivoBlack-Regular.woff2) format("woff2"),
+    url(/vendor/fonts/ArchivoBlack-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src:
+    url("/vendor/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("/vendor/fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src:
+    url("/vendor/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("/vendor/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src:
+    url("/vendor/fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("/vendor/fonts/OpenSans-SemiBold.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050510;
+  background-image:
+    radial-gradient(
+      circle at calc(50% + 200px) 180px,
+      rgba(109, 109, 255, 0.22),
+      transparent 250px
+    ),
+    radial-gradient(
+      circle at calc(50% - 20px) calc(100% - 140px),
+      rgba(109, 109, 255, 0.18),
+      transparent 260px
+    ),
+    radial-gradient(
+      circle at calc(50% - 320px) 58%,
+      rgba(70, 90, 255, 0.1),
+      transpaent 220px
+    );
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 10px;
+  position: relative;
+}
+
+.header-content {
+  width: auto;
+  flex: 1 1 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 50px;
+}
+
+.header-image {
+  position: relative;
+  display: block;
+  width: 387px;
+  max-height: 500px;
+  max-inline-size: 100%;
+  top: 10px;
+  right: 0;
+  padding: 40px;
+  object-fit: cover;
+}
+
+.header-title {
+  top: 10px;
+  font-family: "ArchivoBlack-Regular";
+  font-weight: 400;
+  font-size: 72px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.header-subtitle {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: auto;
+}
+
+.header-description {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  text-decoration: white underline;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: "OpenSans-SemiBold";
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.section-title {
+  font-family: "ArchivoBlack-Regular";
+  font-weight: 400;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 0 50px;
+}
+
+.section-icons {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  padding: 50px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.projects-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 50px;
+  margin-top: -20px;
+  width: auto;
+}
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  margin-bottom: 40px;
+  padding: 10px;
+  gap: 0px;
+}
+
+.card-project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card-project-title {
+  font-family: "OpenSans-Bold";
+  weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  margin-left: 30px;
+}
+
+.card-project-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  margin-top: -20px;
+  height: 340px;
+}
+
+.card-project-description {
+  font-family: "OpenSans-Regular";
+  weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.card-project-buttons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+  margin-top: auto;
+  margin-bottom: 30px;
+  left: 30px;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer-content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.footer-image {
+  position: relative;
+  background-image: url("/images/Ellipse\ 75.png");
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
