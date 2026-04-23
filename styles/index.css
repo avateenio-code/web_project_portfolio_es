@@ -51,6 +51,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  box-sizing: border-box;
 }
 
 header {
@@ -91,19 +92,17 @@ header {
   width: 387px;
   max-height: 500px;
   max-inline-size: 100%;
-  top: 10px;
-  right: 0;
   padding: 40px;
   object-fit: cover;
+  box-sizing: border-box;
 }
 
 .header-title {
-  top: 10px;
   font-family: "ArchivoBlack-Regular";
   font-weight: 400;
-  font-size: 72px;
+  font-size: 70px;
   color: #ffffff;
-  margin-bottom: 20px;
+  max-width: 793px;
 }
 
 .header-title:hover {
